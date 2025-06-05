@@ -1,12 +1,12 @@
 {
-  "name": "parcel",
+  "name": "hm-12",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://artemanoh.github.io/parcel",
+  "homepage": "https://artemanoh.github.io/hm-12",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel src/index.html",
-    "build": "parcel build src/index.html  --public-url /parcel",
+    "build": "parcel build src/index.html  --public-url /hm-12",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
