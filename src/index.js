@@ -20,10 +20,10 @@ class CountdownTimer {
 
     if (time <= 0) {
       clearInterval(this.intervalId);
-      this.daysElement.textContent = '0';
-      this.hoursElement.textContent = '00';
-      this.minutesElement.textContent = '00';
-      this.secondsElement.textContent = '00';
+      this.daysElement.textContent = "0";
+      this.hoursElement.textContent = "00";
+      this.minutesElement.textContent = "00";
+      this.secondsElement.textContent = "00";
       return;
     }
 
@@ -33,13 +33,13 @@ class CountdownTimer {
     const seconds = Math.floor((time % (1000 * 60)) / 1000);
 
     this.daysElement.textContent = days;
-    this.hoursElement.textContent = String(hours).padStart(2, '0');
-    this.minutesElement.textContent = String(minutes).padStart(2, '0');
-    this.secondsElement.textContent = String(seconds).padStart(2, '0');
+    this.hoursElement.textContent = String(hours).padStart(2, "0");
+    this.minutesElement.textContent = String(minutes).padStart(2, "0");
+    this.secondsElement.textContent = String(seconds).padStart(2, "0");
   }
 }
 
 new CountdownTimer({
-  selector: '#timer-1',
-  targetDate: new Date('Jul 17, 2025'),
+  selector: "#timer-1",
+  targetDate: new Date("Jul 17, 2025"),
 });
